@@ -16,4 +16,10 @@
         android:name="com.ricardocarvalho.mylibrary.ui.FavoriteFragment"
         android:label="@string/title_favorites"
         tools:layout="@layout/fragment_favorite" />
+
+    <fragment
+        android:id="@+id/navigation_details"
+        android:name="com.ricardocarvalho.mylibrary.ui.DetailsFragment"
+        android:label="@string/title_book_details"
+        tools:layout="@layout/fragment_details" />
 </navigation>

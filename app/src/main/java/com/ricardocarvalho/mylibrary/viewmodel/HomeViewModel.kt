@@ -1,4 +1,4 @@
-package com.ricardocarvalho.mylibrary.viewmodels
+package com.ricardocarvalho.mylibrary.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
