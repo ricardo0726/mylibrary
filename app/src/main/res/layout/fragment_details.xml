@@ -99,7 +99,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:text="REMOVER LIVRO"
+        android:text="Remover Livro"
         android:backgroundTint="@color/red"
         android:paddingStart="32dp"
         android:paddingEnd="32dp"/>
