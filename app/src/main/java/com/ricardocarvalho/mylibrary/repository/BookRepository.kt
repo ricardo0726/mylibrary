@@ -2,12 +2,25 @@ package com.ricardocarvalho.mylibrary.repository
 
 import com.ricardocarvalho.mylibrary.entity.BookEntity
 
-class BookRepository {
+class BookRepository private constructor() {
 
     private val books = mutableListOf<BookEntity>()
 
     init {
         books.addAll(getInitialBooks())
+    }
+
+    companion object {
+        private lateinit var instance: BookRepository
+
+        fun getInstance(): BookRepository {
+            synchronized(this) {
+                if (!::instance.isInitialized) {
+                    instance = BookRepository()
+                }
+            }
+            return instance
+        }
     }
 
     private fun getInitialBooks(): List<BookEntity> {
